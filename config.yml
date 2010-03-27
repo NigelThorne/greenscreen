@@ -3,16 +3,14 @@
 
 
 # List all jobs running on a server
-# - 
-#   url: http://localhost:8080/cc.xml
-
+#- 
+#  url: http://localhost:8080/cc.xml
 
 # A server with basic authentication.
 # - 
 #   url: http://localhost:8080/cc.xml
 #   username: hudson-user
 #   password: hudson-password
-
 
 # If you have a lot of jobs, and you only want to show the status of some of them, 
 # try listing them explicitly
@@ -23,3 +21,9 @@
 #   jobs: 
 #     - roodi
 #     - runway
+
+#If you are using TeamCity for the Projects you want to monitor you need to turn on status publishing.
+#-
+#  url: http://localhost:8000/externalStatus.html
+#  jobs: 
+#    - PC Applications_[^R]
